@@ -22,9 +22,71 @@ header {
     z-index: 1000;
     /* Đảm bảo header nằm trên các thành phần khác */
 }
+
 footer {
     background-color: #333;
     color: white;
     padding: 10px;
     text-align: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    align-items: center;
+    margin: 0 10%;
+}
+
+.navbar img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.lst-navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.lst-navbar :hover {
+    background-color: rgb(226, 224, 224);
+}
+
+.navbar input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 0.5px solid gray;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    font-size: 16px;
+    border: 0.5px solid rgb(218, 212, 212);
+}
+
+.search-container input:focus {
+    border: 0.5px solid blue !important;
+}
+
+.search-container .search-icon {
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.search-icon img {
+    width: 30px;
+    padding-top: 5px;
 }
